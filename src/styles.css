@@ -19,3 +19,9 @@ body {
     --color-white: #fff;
     --color-black: #202020;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
