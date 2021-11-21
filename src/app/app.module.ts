@@ -17,13 +17,15 @@ import { environment } from 'src/environments/environment';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { EmailVerificationComponent } from './pages/email-verification/email-verification.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AuthenticatorComponent
+    AuthenticatorComponent,
+    EmailVerificationComponent
   ],
   imports: [
     BrowserModule,
