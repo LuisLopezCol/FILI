@@ -18,7 +18,7 @@ export class AppComponent {
     ){
     this.auth.listenToSignInStateChanges(
     user => {
-       this.auth.checkSignInState(
+        this.auth.checkSignInState(
         {
           whenSignedIn: user => {
             // alert("Logged in");
@@ -27,10 +27,11 @@ export class AppComponent {
             // alert("Logged out");
           },
           whenSignedInAndEmailNotVerified: user => {
-            // this.router.navigate(["emailVerification"]);
-            // this.auth.sendVerificationEmail();
+            this.router.navigate(["emailVerification"]);
+            this.auth.sendVerificationEmail();
           },
           whenSignedInAndEmailVerified: user => {
+            // this.router.navigate([""]);
           },
           whenChanged: user => {
 

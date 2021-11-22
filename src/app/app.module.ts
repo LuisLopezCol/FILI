@@ -21,6 +21,7 @@ import { EmailVerificationComponent } from './pages/email-verification/email-ver
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { NavigationBarComponent } from './tools/navigation-bar/navigation-bar.component';
 import { FooterBarComponent } from './tools/footer-bar/footer-bar.component';
+import { LandingComponent } from './pages/landing/landing.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { FooterBarComponent } from './tools/footer-bar/footer-bar.component';
     NotFoundComponent,
     NavigationBarComponent,
     FooterBarComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
