@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
-import { AuthenticatorComponent } from './tools/authenticator/authenticator.component';
 import { FirebaseTSAuth } from 'firebasets/firebasetsAuth/firebaseTSAuth'
 import { Router } from '@angular/router'
+// import { AuthenticatorComponent } from './tools/authenticator/authenticator.component';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +27,8 @@ export class AppComponent {
             // alert("Logged out");
           },
           whenSignedInAndEmailNotVerified: user => {
-            this.router.navigate(["emailVerification"]);
+            // this.router.navigate(["emailVerification"]);
+            // this.auth.sendVerificationEmail();
           },
           whenSignedInAndEmailVerified: user => {
           },
@@ -40,13 +41,13 @@ export class AppComponent {
     );
   }
   
-  loggedIn(){
-    return this.auth.isSignedIn();
-  }
+  // loggedIn(){
+  //   return this.auth.isSignedIn();
+  // }
 
-  onLoginClick(){this.loginSheet.open(AuthenticatorComponent)
-  }
+  // onLoginClick(){this.loginSheet.open(AuthenticatorComponent)
+  // }
   
-  onLogoutClick(){this.auth.signOut();
-  }
+  // onLogoutClick(){this.auth.signOut();
+  // }
 }

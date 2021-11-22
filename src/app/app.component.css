@@ -3,15 +3,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 5em;
+    height: fit-content;
+    background-color: var(--color-white);
     z-index: 10;
-
+    border-bottom: 2px solid var(--color-lightgray);
 }
 
 #nav_bar_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    margin: 0.5em 1.5em
 }
 
 #navbar_left, #navbar_right {
@@ -26,12 +28,12 @@
 
 #navbar_left {
     justify-content: flex-start;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 #navbar_right {
     justify-content: flex-end;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .navbar-items {
