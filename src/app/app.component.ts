@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { FirebaseTSAuth } from 'firebasets/firebasetsAuth/firebaseTSAuth'
 import { Router } from '@angular/router'
-// import { AuthenticatorComponent } from './tools/authenticator/authenticator.component';
 
 @Component({
   selector: 'app-root',

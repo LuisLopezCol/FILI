@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// import { FontAwesomeModule } from '@fortawesome/fontawesome-free';
+
 // ----------------- FIREBASE
 import { FirebaseTSApp } from 'firebasets/firebasetsApp/firebaseTSApp';
 import { environment } from 'src/environments/environment';
@@ -13,6 +15,7 @@ import { environment } from 'src/environments/environment';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatIconModule } from '@angular/material/icon'
 
 // ----------------- COMPONENTS 
 import { HomeComponent } from './pages/home/home.component';
@@ -41,7 +44,8 @@ import { LandingComponent } from './pages/landing/landing.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
