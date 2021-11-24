@@ -1,0 +1,14 @@
+<div id="nav_bar">
+    <div id="nav_bar_content">
+        <div id="navbar_left">
+            <div routerLink="" class="navbar-items"><img src="../assets/img/logo-main.ico" style="width: 50px;" alt="">
+            </div>
+        </div>
+        <div id="navbar_right">
+            <button mat-raised-button *ngIf="!loggedIn()" class="navbar-items" mat-raised-button
+                (click)="onLoginClick()">Login</button>
+            <button mat-raised-button *ngIf="loggedIn()" class="navbar-items" mat-raised-button
+                (click)="onLogoutClick()">Logout</button>
+        </div>
+    </div>
+</div>

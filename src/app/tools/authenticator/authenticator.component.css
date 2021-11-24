@@ -1,0 +1,38 @@
+#authenticator {
+    padding: 50px;
+    width: 600px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#authenticator_content {
+    width: 500px;
+    max-width: 30em;
+    padding: 1em;
+    width: 80%;
+}
+
+
+.main-button {
+    font-size: 1.2em !important;
+    background-color: var(--color-cop-red) !important;
+    padding: 5px 12px !important;
+    color: var(--color-white);
+}
+
+button {
+    margin: .5em;
+}
+
+input {
+    width: 90%;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(15, 15, 15, 0.3);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

@@ -25,6 +25,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { NavigationBarComponent } from './tools/navigation-bar/navigation-bar.component';
 import { FooterBarComponent } from './tools/footer-bar/footer-bar.component';
 import { LandingComponent } from './pages/landing/landing.component';
+import { CreateComponent } from './pages/create/create.component';
+import { JoinComponent } from './pages/join/join.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { LandingComponent } from './pages/landing/landing.component';
     NavigationBarComponent,
     FooterBarComponent,
     LandingComponent,
+    CreateComponent,
+    JoinComponent,
   ],
   imports: [
     BrowserModule,
