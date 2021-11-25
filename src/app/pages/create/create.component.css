@@ -68,18 +68,9 @@
     height: auto;
 }
 
-#create_right {
-    background-image: url(../../../assets/img/UnderC.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
 
 #create_right_content, #create_right {
     height: 100%;
     width: 100% !important;
-    display: flex;
-    justify-content: end;
-    align-items: end;
+
 }

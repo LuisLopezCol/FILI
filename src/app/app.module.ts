@@ -28,6 +28,8 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { CreateComponent } from './pages/create/create.component';
 import { JoinComponent } from './pages/join/join.component';
 
+//ReactiveForms
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { JoinComponent } from './pages/join/join.component';
     MatButtonModule,
     MatCardModule,
     MatBottomSheetModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

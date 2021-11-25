@@ -8,8 +8,75 @@
             </div>
         </div>
         <div id="create_right">
-            <div id="create_right_content">
-
+            <div id="create_right_content" class="w-100">
+                <form [formGroup]="createForm" (ngSubmit)="saveForm()">
+                    <div class="mt-5">
+                        <label class="form-label">Event's Name</label>
+                        <input class="form-control" type="text" formControlName="eventName">
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventName')?.hasError('required') && createForm.get('eventName')?.touched">This
+                            item is mandatory</span>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Date</label>
+                        <input class="form-control" type="date" formControlName="eventDate">
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventDate')?.hasError('required') && createForm.get('eventDate')?.touched">This
+                            item is mandatory</span>
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventDate')?.hasError('pattern')">Please enter a valid date</span>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Time</label>
+                        <input class="form-control" type="time" formControlName="eventTime">
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventTime')?.hasError('required') && createForm.get('eventTime')?.touched">This
+                            item is mandatory</span>
+                    </div>
+                    <div class="mb-1">
+                        <label class=" form-label">Location</label>
+                        <input class="form-control" type="text" formControlName="eventLocation">
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventLocation')?.hasError('required') && createForm.get('eventLocation')?.touched">This
+                            item is mandatory</span>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Sport</label>
+                        <input class="form-control" type="text" id="formFileDisabled" formControlName="eventSport">
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventSport')?.hasError('required') && createForm.get('eventSport')?.touched">
+                            This item is mandatory</span>
+                    </div>
+                    <div class="mb-1">
+                        <label class="form-label">Distance</label>
+                        <input class="form-control form-control-sm" id="formFileSm" type="number"
+                            formControlName="eventDistance">
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventDistance')?.hasError('required') && createForm.get('eventDistance')?.touched">This
+                            item is mandatory</span>
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventDistance')?.hasError('pattern')">This must be numeric</span>
+                    </div>
+                    <div>
+                        <label class="form-label">Comments</label>
+                        <input class="form-control form-control-lg" id="formFileLg" type="text"
+                            formControlName="eventComments">
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventComments')?.hasError('required') && createForm.get('eventComments')?.touched">This
+                            item is mandatory</span>
+                    </div>
+                    <div>
+                        <label class="form-label">Cost</label>
+                        <input class="form-control form-control-lg" id="formFileLg" type="number"
+                            formControlName="eventCost">
+                        <span class="text-danger fw-bold"
+                            *ngIf="createForm.get('eventCost')?.hasError('required') && createForm.get('eventCost')?.touched">This
+                            item is mandatory</span>
+                        <span class="text-danger fw-bold" *ngIf="createForm.get('eventCost')?.hasError('pattern')">This
+                            must be numeric</span>
+                    </div>
+                    <button type="submit" class="btn btn-success">SUBMIT!</button>
+                </form>
             </div>
         </div>
     </div>
